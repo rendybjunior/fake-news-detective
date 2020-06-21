@@ -6,12 +6,12 @@ export default function FirstPost() {
 	return (
 		<Layout>
 			<Head>
-				<title>First Post</title>
+				<title>Level 1 - Case 1</title>
 			</Head>
-			<h1>First Post</h1>
+			<h1>Level 1 - Case 1</h1>
 			<h2>
-				<Link href="/">
-					<a>Back to home</a>
+				<Link href="/levels">
+					<a>Back to Game Levels</a>
 				</Link>
 			</h2>
 		</Layout>
