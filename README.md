@@ -1,1 +1,1 @@
-# fake-news-detective-game
+# fake-news-detective
