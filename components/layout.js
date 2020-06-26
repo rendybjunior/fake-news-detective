@@ -36,6 +36,8 @@ export default function Layout({ children, home }) {
 			</>
 		  ) : (
 			<>
+				<div>Level 1 - Case 1</div>
+				<div>Score <div>1234</div></div>
 			  <Link href="/">
 				<a>
 				  <img
