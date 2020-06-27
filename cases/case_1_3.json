@@ -1,0 +1,23 @@
+{
+	"id": "case_1_3",
+	"title": "Level 1 Case 3 - Serena Williams Scandal",
+	"level": 1,
+	"case": 3,
+	"comment": "Followers ask about this tweet…",
+	"content": "/images/case_1_3.jpg",
+	"prompt": "What do you think about this post?",
+	"options": [
+		{
+			"id": "option_1",
+			"text": "The account has a blue check mark, trusted account, the story is trustworthy.",
+			"type": "result",
+			"next_id": "result_1_3a"
+		},
+		{
+			"id": "option_2",
+			"text": "I would like to look know more about TheOnion",
+			"type": "dialog",
+			"next_id": "dialog_1_3_1"
+		}
+	]
+}

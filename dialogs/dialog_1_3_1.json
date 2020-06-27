@@ -1,0 +1,22 @@
+{
+	"id": "dialog_1_3_1",
+	"level": 1,
+	"case": 3,
+	"comment": "Let’s search for what The Onion actually is.",
+	"content": "/images/dialog_1_3_1.png",
+	"prompt": "What do you get from above?",
+	"options": [
+		{
+			"id": "option_1",
+			"text": "It says America’s finest news source, so it is true, what a shame Serena!",
+			"type": "result",
+			"next_id": "result_1_3b"
+		},
+		{
+			"id": "option_2",
+			"text": "It says satirical news organization, so it is a joke",
+			"type": "result",
+			"next_id": "result_1_3a"
+		}
+	]
+}
