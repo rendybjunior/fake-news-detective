@@ -28,11 +28,6 @@ export default function Levels({ allCasesData }) {
 					</li>
 				))}
 			</ul>
-			{/* <h1>Game Levels</h1>
-			<h2>Level 1</h2>
-			<Link href="/case">
-				<a>Case 1 - Unbreak My Heart</a>
-			</Link> */}
 		</Layout>
 	);
 }

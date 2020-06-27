@@ -11,13 +11,13 @@
 			"id": "option_1",
 			"text": "Looks authentic. Let’s share to Hoax Buster social media followers that the story looks fine!",
 			"type": "result",
-			"next_id": "result_1b"
+			"next_id": "result_1_1b"
 		},
 		{
 			"id": "option_2",
 			"text": "Something is fishy here…",
 			"type": "dialog",
-			"next_id": "dialog_1"
+			"next_id": "dialog_1_1_1"
 		}
 	]
 }

@@ -1,5 +1,5 @@
 {
-	"id": "dialog_1",
+	"id": "dialog_1_1_1",
 	"level": 1,
 	"case": 1,
 	"comment": "I feel the same way...",
@@ -10,13 +10,13 @@
 			"id": "option_1",
 			"text": "The title is too short for a news",
 			"type": "result",
-			"next_id": "result_1b"
+			"next_id": "result_1_1b"
 		},
 		{
 			"id": "option_2",
 			"text": "The site seems similar to major news but not the same address",
 			"type": "result",
-			"next_id": "result_1a"
+			"next_id": "result_1_1a"
 		}
 	]
 }
