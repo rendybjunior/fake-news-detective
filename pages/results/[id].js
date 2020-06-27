@@ -29,7 +29,9 @@ export default function Result({ resultData }) {
 			<p>{resultData.material}</p>
 			<p>Points : {resultData.points}</p>
 			<p>
-				<a href={resultData.reference}>Learn more</a>
+				<a href={resultData.reference} target="_blank">
+					Learn more
+				</a>
 			</p>
 			<p>
 				<Link href="/cases/[id]" as={`/cases/${resultData.next_id}`}>
