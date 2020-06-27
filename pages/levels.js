@@ -22,10 +22,9 @@ export default function Levels({ allCasesData }) {
 			<ul className={utilStyles.list}>
 				{allCasesData.map(({ id, title }) => (
 					<li className={utilStyles.listItem} key={id}>
-						{title}
-						{/* <Link href="/cases/[id]" as={`/cases/${id}`}>
+						<Link href="/cases/[id]" as={`/cases/${id}`}>
 							{title}
-						</Link> */}
+						</Link>
 					</li>
 				))}
 			</ul>

@@ -4,20 +4,19 @@
 	"level": 1,
 	"case": 1,
 	"comment": "We just got our first case! Our followers ask whether this story is true.",
-	"content": "/images/profile.jpg",
+	"content": "/images/case_1_1.png",
 	"prompt": "What should we say?",
 	"options": [
 		{
-			"id": 1,
+			"id": "option_1",
 			"text": "Looks authentic. Let’s share to Hoax Buster social media followers that the story looks fine!",
-			"type": "results",
-			"next_id": "result_1",
-			"response": "negative"
+			"type": "result",
+			"next_id": "result_1b"
 		},
 		{
-			"id": 1,
+			"id": "option_2",
 			"text": "Something is fishy here…",
-			"type": "dialogs",
+			"type": "dialog",
 			"next_id": "dialog_1"
 		}
 	]

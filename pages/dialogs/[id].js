@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import Layout from '../../components/layout';
-import { getAllCaseIds, getCaseData } from '../../lib/cases';
+import { getAllDialogIds, getDialogData } from '../../lib/dialogs';
 import utilStyles from '../../styles/utils.module.css';
 
 export async function getStaticPaths() {
-	const paths = getAllCaseIds();
+	const paths = getAllDialogIds();
 	return {
 		paths,
 		fallback: false
@@ -13,10 +13,10 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-	const caseData = await getCaseData(params.id);
+	const dialogData = await getDialogData(params.id);
 	return {
 		props: {
-			caseData
+			dialogData
 		}
 	};
 }
@@ -37,18 +37,18 @@ export function getOption(option_type, text, next_id) {
 	}
 }
 
-export default function Case({ caseData }) {
+export default function Dialog({ dialogData }) {
 	return (
 		<Layout>
 			<Head>
-				<title>{caseData.title}</title>
+				<title>{dialogData.title}</title>
 			</Head>
-			<h1>{caseData.title}</h1>
-			<p>{caseData.comment}</p>
-			<img src={caseData.content} alt={caseData.title} />
-			<p>{caseData.prompt}</p>
+			<h1>{dialogData.title}</h1>
+			<p>{dialogData.comment}</p>
+			<img src={dialogData.content} alt={dialogData.title} />
+			<p>{dialogData.prompt}</p>
 			<ul className={utilStyles.list}>
-				{caseData.options.map(({ id, text, next_id, type }) => (
+				{dialogData.options.map(({ id, text, next_id, type }) => (
 					<li className={utilStyles.listItem} key={id}>
 						{getOption(type, text, next_id)}
 					</li>

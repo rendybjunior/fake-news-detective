@@ -3,22 +3,20 @@
 	"level": 1,
 	"case": 1,
 	"comment": "I feel the same way...",
-	"content": "/images/profile.jpg",
+	"content": "/images/case_1_1.png",
 	"prompt": "What do you think is fishy?",
 	"options": [
 		{
-			"id": 1,
+			"id": "option_1",
 			"text": "The title is too short for a news",
-			"type": "results",
-			"next_id": "result_1",
-			"response": "negative"
+			"type": "result",
+			"next_id": "result_1b"
 		},
 		{
-			"id": 1,
+			"id": "option_2",
 			"text": "The site seems similar to major news but not the same address",
-			"type": "results",
-			"next_id": "result_1",
-			"response": "positive"
+			"type": "result",
+			"next_id": "result_1a"
 		}
 	]
 }
