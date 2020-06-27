@@ -1,0 +1,19 @@
+{
+	"id": "result_1",
+	"level": 1,
+	"case": 1,
+	"material": "Site breaking-cnn.com tries to mimic CNN, it is known to publish celebrity death hoaxes. The easiest way to see whether a news is fake or not is: 1) look at the link, if it tries to mimic major news site then it’s likely a fake, 2) if you are not familiar about it, don’t believe it right away",
+	"reference": "https://www.snopes.com/fact-check/toni-braxton-death-hoax/",
+	"responses": {
+		"positive": {
+			"comment": "Wohoo! We helped our followers to dodge the fake news! You got 8 points!",
+			"response": "You are right about this post! I almost believed it. Thanks!",
+			"point": 8
+		},
+		"negative": {
+			"comment": "Oops, that’s not what we are looking for...",
+			"response": "Hey, I found out that this post is actually a fake! :(",
+			"point": -2
+		}
+	}
+}
