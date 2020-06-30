@@ -23,7 +23,7 @@ export async function getStaticProps({ params }) {
 
 export default function Result({ resultData }) {
 	return (
-		<Layout>
+		<Layout score={resultData.points}>
 			<p>{resultData.comment}</p>
 			<p>{resultData.response}</p>
 			<p>{resultData.material}</p>

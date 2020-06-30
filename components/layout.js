@@ -2,11 +2,12 @@ import Head from 'next/head';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import Score from './score';
 
 const name = 'Rendy';
 export const siteTitle = 'Fake News Detective';
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, score }) {
 	return (
 	<div className={styles.container}>
 		<Head>
@@ -37,7 +38,7 @@ export default function Layout({ children, home }) {
 		  ) : (
 			<>
 				<div>Level 1 - Case 1</div>
-				<div>Score <div>1234</div></div>
+				<Score step={score ? score : 0} />
 			  <Link href="/">
 				<a>
 				  <img
