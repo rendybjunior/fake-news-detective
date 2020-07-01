@@ -11,7 +11,7 @@
 			"id": "option_1",
 			"text": "The account has a blue check mark, trusted account, the story is trustworthy.",
 			"type": "result",
-			"next_id": "result_1_3a"
+			"next_id": "result_1_3b"
 		},
 		{
 			"id": "option_2",
