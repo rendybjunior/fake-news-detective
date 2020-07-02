@@ -1,7 +1,7 @@
 {
 	"id": "dialog_1_2_1",
 	"level": 1,
-	"case": 2,
+	"cases": 2,
 	"comment": "Yes the organization looks OK, but...",
 	"content": "/images/case_1_2.png",
 	"prompt": "What do you think are the possible motives for this post?",

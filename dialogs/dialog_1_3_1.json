@@ -1,7 +1,7 @@
 {
 	"id": "dialog_1_3_1",
 	"level": 1,
-	"case": 3,
+	"cases": 3,
 	"comment": "Let’s search for what The Onion actually is.",
 	"content": "/images/dialog_1_3_1.png",
 	"prompt": "What do you get from above?",

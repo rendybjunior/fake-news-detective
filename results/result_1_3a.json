@@ -1,7 +1,7 @@
 {
 	"id": "result_1_3a",
 	"level": 1,
-	"case": 3,
+	"cases": 3,
 	"material": "Satirical news is a parody, it is written to be similar with news journalism. They are jokes, and we should be careful!",
 	"reference": "https://en.wikipedia.org/wiki/List_of_satirical_news_websites",
 	"comment": "It was a joke, a satirical news!",
