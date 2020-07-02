@@ -7,5 +7,7 @@
 	"comment": "It was a joke, a satirical news!",
 	"response": "Wow, I almost believed it, how come Serena held two rackets this whole time??",
 	"points": 4,
-	"next_id": "case_2_1"
+	"next_id": "case_2_1",
+	"next_level": 2,
+	"next_case": 1
 }

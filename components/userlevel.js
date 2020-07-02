@@ -20,6 +20,14 @@ export default class UserLevel extends Component {
 				return JSON.parse(data);
 			});
 		}
+		if (this.props.newLevel && this.props.newCase) {
+			if (this.props.newLevel >= this.state.level || this.props.newCase >= this.state.cases) {
+				this.setState({
+					level: this.props.newLevel,
+					cases: this.props.newCase
+				});
+			}
+		}
 	}
 
 	render() {

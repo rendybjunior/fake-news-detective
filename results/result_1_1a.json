@@ -7,5 +7,7 @@
 	"comment": "Wohoo! We helped our followers to dodge the fake news! You got 4 points!",
 	"response": "You are right about this post! I almost believed it. Thanks!",
 	"points": 4,
-	"next_id": "case_1_2"
+	"next_id": "case_1_2",
+	"next_level": 1,
+	"next_case": 2
 }

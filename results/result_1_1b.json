@@ -7,5 +7,7 @@
 	"comment": "Oops, that’s not what we are looking for...",
 	"response": "Hey, I found out that this post is actually a fake! :(",
 	"points": -1,
-	"next_id": "case_1_2"
+	"next_id": "case_1_2",
+	"next_level": 1,
+	"next_case": 2
 }

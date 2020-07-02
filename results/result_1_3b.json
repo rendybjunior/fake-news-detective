@@ -7,5 +7,7 @@
 	"comment": "It was a joke, a satirical news!",
 	"response": "Hey I found this as satire, not a real news! :(",
 	"points": -1,
-	"next_id": "case_2_1"
+	"next_id": "case_2_1",
+	"next_level": 2,
+	"next_case": 1
 }

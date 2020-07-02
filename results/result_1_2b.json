@@ -7,5 +7,7 @@
 	"comment": "Both options are right, but we need to be aware that post creator might have some intentions",
 	"response": "Thanks, that’s insightful!",
 	"points": 4,
-	"next_id": "case_1_3"
+	"next_id": "case_1_3",
+	"next_level": 1,
+	"next_case": 3
 }

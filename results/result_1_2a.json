@@ -7,5 +7,7 @@
 	"comment": "Oops, that’s not what we are looking for...",
 	"response": "Hmm the bank actually is a real bank!",
 	"points": -1,
-	"next_id": "case_1_3"
+	"next_id": "case_1_3",
+	"next_level": 1,
+	"next_case": 3
 }

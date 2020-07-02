@@ -1,8 +1,7 @@
 import Link from 'next/link';
-import Head from 'next/head';
 import Layout from '../../components/layout';
+import UserLevel from '../../components/userlevel';
 import { getAllResultIds, getResultData } from '../../lib/results';
-import utilStyles from '../../styles/utils.module.css';
 
 export async function getStaticPaths() {
 	const paths = getAllResultIds();
@@ -22,6 +21,7 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Result({ resultData }) {
+	// nextCase = getCaseData(resultData.next_id);
 	return (
 		<Layout score={resultData.points}>
 			<p>{resultData.comment}</p>
@@ -34,9 +34,20 @@ export default function Result({ resultData }) {
 				</a>
 			</p>
 			<p>
-				<Link href="/cases/[id]" as={`/cases/${resultData.next_id}`}>
+				{/* <Link href="/cases/[id]" as={`/cases/${resultData.next_id}`}>
 					Continue
-				</Link>
+				</Link> */}
+				<UserLevel
+					gameLevel={resultData.next_level}
+					gameCase={resultData.next_case}
+					gameTitle={'Continue'}
+					newLevel={resultData.next_level}
+					newCase={resultData.next_case}
+				>
+					<Link href="/cases/[id]" as={`/cases/${resultData.next_id}`}>
+						Continue
+					</Link>
+				</UserLevel>
 			</p>
 		</Layout>
 	);
