@@ -5,7 +5,7 @@ import homeStyles from '../styles/home.module.css';
 
 export default function Story2() {
 	return (
-		<Layout>
+		<Layout home>
 			<h2>Welcome to Hoax Buster, the fact checking organization!</h2>
 			<p>
 				Our mission is to fight fake news by warning our followers in social media when we see something strange

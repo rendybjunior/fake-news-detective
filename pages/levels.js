@@ -16,7 +16,7 @@ export async function getStaticProps() {
 
 export default function Levels({ allCasesData }) {
 	return (
-		<Layout>
+		<Layout levels>
 			<Head>
 				<title>Levels</title>
 			</Head>

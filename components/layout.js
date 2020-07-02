@@ -7,7 +7,7 @@ import Score from './score';
 const name = 'Rendy';
 export const siteTitle = 'Fake News Detective';
 
-export default function Layout({ children, home, score }) {
+export default function Layout({ children, home, levels, score }) {
 	return (
 	<div className={styles.container}>
 		<Head>
@@ -37,30 +37,21 @@ export default function Layout({ children, home, score }) {
 			</>
 		  ) : (
 			<>
-				<div>Level 1 - Case 1</div>
 				<Score step={score ? score : 0} />
-			  <Link href="/">
-				<a>
-				  <img
+				<img
 					src="/images/explore.png"
 					className={`${styles.headerImage} ${utilStyles.borderCircle}`}
 					alt={name}
-				  />
-				</a>
-			  </Link>
-			  <h2 className={utilStyles.headingLg}>
-				<Link href="/">
-				  <a className={utilStyles.colorInherit}>{name}</a>
-				</Link>
-			  </h2>
+				/>
+			  <h2 className={utilStyles.headingLg}>{name}</h2>
 			</>
 		  )}
 		</header>
 		<main>{children}</main>
-		{!home && (
+		{!home && !levels && (
 		  <div className={styles.backToHome}>
-			<Link href="/">
-			  <a>← Back to home</a>
+			<Link href="/levels">
+			  <a>← Back to Levels</a>
 			</Link>
 		  </div>
 		)}

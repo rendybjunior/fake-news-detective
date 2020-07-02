@@ -5,7 +5,7 @@ import homeStyles from '../styles/home.module.css';
 
 export default function Story() {
 	return (
-		<Layout>
+		<Layout home>
 			<h2>The story starts...</h2>
 			<p>Once upon a time, fake news spreads out fast in social media and many people believe it is true.</p>
 			<p>
