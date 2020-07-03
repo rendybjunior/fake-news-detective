@@ -34,6 +34,15 @@ export default function About() {
 					(c) copyright 2020 Licensed under a Creative Commons Attribution Noncommercial (3.0) license. Ft:
 					Martijn de Boer (NiGiD)
 				</li>
+				<li>
+					Winning sound effect by{' '}
+					<a href="https://freesound.org/people/rhodesmas/sounds/320775/">rhodesmas</a>.{' '}
+					<a href="https://creativecommons.org/licenses/by/3.0/">Licensed under the Attribution License</a>.
+				</li>
+				<li>
+					Losing sound effect by <a href="https://freesound.org/people/TaranP/sounds/362204/">TaranP</a>.{' '}
+					<a href="https://creativecommons.org/licenses/by/3.0/">Licensed under the Attribution License</a>.
+				</li>
 			</ul>
 		</Layout>
 	);

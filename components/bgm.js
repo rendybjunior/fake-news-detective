@@ -6,6 +6,6 @@ export default class BGM extends Component {
 	}
 
 	render() {
-		return <audio id="bgm" src="/sounds/Javolenus_-_Incognito-32.mp3" loop="true" autoPlay="true" />;
+		return <audio id="bgm" src="/sounds/Javolenus_-_Incognito-32.mp3" loop={true} autoPlay={true} />;
 	}
 }

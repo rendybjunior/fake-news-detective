@@ -28,15 +28,17 @@ export default function Result({ resultData }) {
 			<p>{resultData.response}</p>
 			<p>{resultData.material}</p>
 			<p>Points : {resultData.points}</p>
+			{resultData.points > 0 ? (
+				<audio id="bgm" src="/sounds/320775__rhodesmas__win-02.mp3" autoPlay={true} />
+			) : (
+				<audio id="bgm" src="/sounds/362204__taranp__horn-fail-wahwah-3.mp3" autoPlay={true} />
+			)}
 			<p>
 				<a href={resultData.reference} target="_blank">
 					Learn more
 				</a>
 			</p>
 			<p>
-				{/* <Link href="/cases/[id]" as={`/cases/${resultData.next_id}`}>
-					Continue
-				</Link> */}
 				<UserLevel
 					gameLevel={resultData.next_level}
 					gameCase={resultData.next_case}
