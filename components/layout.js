@@ -4,10 +4,10 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Score from './score';
 
-const name = 'Rendy';
+const name = 'Username';
 export const siteTitle = 'Fake News Detective';
 
-export default function Layout({ children, home, levels, score }) {
+export default function Layout({ children, home, levels, score, about }) {
 	return (
 	<div className={styles.container}>
 		<Head>
@@ -43,7 +43,7 @@ export default function Layout({ children, home, levels, score }) {
 					className={`${styles.headerImage} ${utilStyles.borderCircle}`}
 					alt={name}
 				/>
-			  <h2 className={utilStyles.headingLg}>{name}</h2>
+			  <h2 className={utilStyles.headingMd}>{name}</h2>
 			</>
 		  )}
 		</header>
@@ -54,6 +54,13 @@ export default function Layout({ children, home, levels, score }) {
 			  <a>← Back to Levels</a>
 			</Link>
 		  </div>
+		)}
+		{(levels) && (
+			<div>
+			<Link href="/about">
+				<a>About</a>
+			</Link>
+			</div>
 		)}
 	  </div>
 	);
