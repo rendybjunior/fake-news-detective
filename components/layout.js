@@ -4,7 +4,7 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Score from './score';
 
-const name = 'Username';
+// const name = 'Username';
 export const siteTitle = 'Fake News Detective';
 
 export default function Layout({ children, home, levels, score, about }) {
@@ -31,7 +31,7 @@ export default function Layout({ children, home, levels, score, about }) {
 			  <img
 				src="/images/explore.png"
 				className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-				alt={name}
+				alt={siteTitle}
 			  />
 			  <h1 className={utilStyles.heading2Xl}>{siteTitle}</h1>
 			</>
@@ -41,9 +41,9 @@ export default function Layout({ children, home, levels, score, about }) {
 				<img
 					src="/images/explore.png"
 					className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-					alt={name}
+					alt={siteTitle}
 				/>
-			  <h2 className={utilStyles.headingMd}>{name}</h2>
+			  <h2 className={utilStyles.headingMd}>{siteTitle}</h2>
 			</>
 		  )}
 		</header>
