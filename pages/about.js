@@ -19,7 +19,8 @@ export default function About() {
 			<h2>Credits</h2>
 			<ul>
 				<li>
-					The game is using <a href="https://cor.stanford.edu/">Civic Online Reasoning</a>'s curriculum.
+					Curriculum and some materials are from{' '}
+					<a href="https://cor.stanford.edu/">Civic Online Reasoning</a>.
 				</li>
 				<li>
 					Detective icon is made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from{' '}
