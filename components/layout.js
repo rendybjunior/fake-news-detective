@@ -3,6 +3,7 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 import Score from './score';
+import BGM from './bgm'
 
 // const name = 'Username';
 export const siteTitle = 'Fake News Detective';
@@ -56,11 +57,14 @@ export default function Layout({ children, home, levels, score, about }) {
 		  </div>
 		)}
 		{(levels) && (
+			<>
 			<div>
 			<Link href="/about">
 				<a>About</a>
 			</Link>
 			</div>
+			<BGM />
+			</>
 		)}
 	  </div>
 	);

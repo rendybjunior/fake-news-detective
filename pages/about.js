@@ -29,6 +29,11 @@ export default function About() {
 				<li>
 					Hosted on <a href="https://www.heroku.com/">Heroku</a> using Free and Hobby plan.
 				</li>
+				<li>
+					Background music <a href="http://dig.ccmixter.org/files/Javolenus/61812">Incognito</a> by Javolenus
+					(c) copyright 2020 Licensed under a Creative Commons Attribution Noncommercial (3.0) license. Ft:
+					Martijn de Boer (NiGiD)
+				</li>
 			</ul>
 		</Layout>
 	);
