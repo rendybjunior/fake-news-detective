@@ -20,7 +20,14 @@ export default function About() {
 			<ul>
 				<li>
 					Curriculum and some materials are from{' '}
-					<a href="https://cor.stanford.edu/">Civic Online Reasoning</a>.
+					<a href="https://cor.stanford.edu/">Civic Online Reasoning</a>. Licensed under{' '}
+					<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
+						Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+					</a>{' '}
+					and{' '}
+					<a href="https://creativecommons.org/licenses/by/4.0/">
+						Attribution 4.0 International (CC BY 4.0)
+					</a>.
 				</li>
 				<li>
 					Detective icon is made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from{' '}
@@ -31,17 +38,19 @@ export default function About() {
 				</li>
 				<li>
 					Background music <a href="http://dig.ccmixter.org/files/Javolenus/61812">Incognito</a> by Javolenus
-					(c) copyright 2020 Licensed under a Creative Commons Attribution Noncommercial (3.0) license. Ft:
-					Martijn de Boer (NiGiD)
+					(c) copyright 2020 Licensed under a{' '}
+					<a href="https://creativecommons.org/licenses/by-nc/3.0/">
+						Creative Commons Attribution Noncommercial (3.0) license
+					</a>. Ft: Martijn de Boer (NiGiD)
 				</li>
 				<li>
 					Winning sound effect by{' '}
-					<a href="https://freesound.org/people/rhodesmas/sounds/320775/">rhodesmas</a>.{' '}
-					<a href="https://creativecommons.org/licenses/by/3.0/">Licensed under the Attribution License</a>.
+					<a href="https://freesound.org/people/rhodesmas/sounds/320775/">rhodesmas</a>. Licensed under{' '}
+					<a href="https://creativecommons.org/licenses/by/3.0/">the Attribution License</a>.
 				</li>
 				<li>
 					Losing sound effect by <a href="https://freesound.org/people/TaranP/sounds/362204/">TaranP</a>.{' '}
-					<a href="https://creativecommons.org/licenses/by/3.0/">Licensed under the Attribution License</a>.
+					Licensed under <a href="https://creativecommons.org/licenses/by/3.0/">the Attribution License</a>.
 				</li>
 			</ul>
 		</Layout>
