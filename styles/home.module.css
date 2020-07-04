@@ -17,3 +17,49 @@
 	margin: 1rem 0;
 	box-shadow: 0.1rem 0.2rem;
 }
+
+.speechbubble {
+	position: relative;
+	background: white;
+	border-radius: .4rem;
+	margin: 0.5rem;
+	border: 0.05rem solid;
+}
+
+.speechbubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 8px solid transparent;
+	border-right-color: black;
+	border-left: 0;
+	margin-top: -8px;
+	margin-left: -8px;
+	/* border: 0.05rem solid; */
+}
+
+.speechbubbletext {
+	padding: 0.5rem;
+	/* font-size: 0.75rem; */
+	/* color: white; */
+}
+
+.commentImage {
+	width: 3rem;
+	height: 3rem;
+	float: left;
+	margin-top: 1rem;
+}
+
+.speechbubblewrapper {
+	float: left;
+	width: 83%;
+	margin-bottom: 2rem;
+}
+
+.content {
+	/* margin: 5rem 0 1rem 0; */
+}

@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Layout from '../../components/layout';
 import { getAllDialogIds, getDialogData } from '../../lib/dialogs';
 import utilStyles from '../../styles/utils.module.css';
+import homeStyles from '../../styles/home.module.css';
 
 export async function getStaticPaths() {
 	const paths = getAllDialogIds();
@@ -43,8 +44,17 @@ export default function Dialog({ dialogData }) {
 			<Head>
 				<title>{dialogData.title}</title>
 			</Head>
-			<h1>{dialogData.title}</h1>
-			<p>{dialogData.comment}</p>
+			<h4>{dialogData.title}</h4>
+			<img
+				src="/images/explore.png"
+				className={`${homeStyles.commentImage} ${utilStyles.borderCircle}`}
+				alt="player"
+			/>
+			<div className={`${homeStyles.speechbubblewrapper}`}>
+				<div className={`${homeStyles.speechbubble}`}>
+					<div className={`${homeStyles.speechbubbletext}`}>{dialogData.comment}</div>
+				</div>
+			</div>
 			<img src={dialogData.content} alt={dialogData.title} />
 			<p>{dialogData.prompt}</p>
 			<ul className={utilStyles.list}>

@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Layout from '../../components/layout';
 import { getAllCaseIds, getCaseData } from '../../lib/cases';
 import utilStyles from '../../styles/utils.module.css';
+import homeStyles from '../../styles/home.module.css';
 
 export async function getStaticPaths() {
 	const paths = getAllCaseIds();
@@ -43,9 +44,20 @@ export default function Case({ caseData }) {
 			<Head>
 				<title>{caseData.title}</title>
 			</Head>
-			<h1>{caseData.title}</h1>
-			<p>{caseData.comment}</p>
-			<img src={caseData.content} alt={caseData.title} />
+			<h4>{caseData.title}</h4>
+			<img
+				src="/images/explore.png"
+				className={`${homeStyles.commentImage} ${utilStyles.borderCircle}`}
+				alt="player"
+			/>
+			<div className={`${homeStyles.speechbubblewrapper}`}>
+				<div className={`${homeStyles.speechbubble}`}>
+					<div className={`${homeStyles.speechbubbletext}`}>{caseData.comment}</div>
+				</div>
+			</div>
+			<div className={`${homeStyles.content}`}>
+				<img src={caseData.content} alt={caseData.title} />
+			</div>
 			<p>{caseData.prompt}</p>
 			<ul className={utilStyles.list}>
 				{caseData.options.map(({ id, text, next_id, type }) => (
