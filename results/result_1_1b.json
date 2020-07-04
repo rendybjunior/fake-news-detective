@@ -3,7 +3,7 @@
 	"title": "Level 1 Case 1 - Unbreak My Heart",
 	"level": 1,
 	"cases": 1,
-	"material": "Site breaking-cnn.com tries to mimic CNN, it is known to publish celebrity death hoaxes. The easiest way to see whether a news is fake or not is: 1) look at the link, if it tries to mimic major news site then it’s likely a fake, 2) if you are not familiar about it, don’t believe it right away",
+	"material": "Site breaking-cnn.com tries to mimic CNN; it is known to publish celebrity death hoaxes. The easiest way to see whether a news is fake or not is to look at the link and check whether it is suspicious.",
 	"reference": "https://www.snopes.com/fact-check/toni-braxton-death-hoax/",
 	"comment": "Oops, that’s not what we are looking for...",
 	"response": "Hey, I found out that this post is actually a fake! :(",
