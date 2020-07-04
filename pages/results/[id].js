@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Comment from '../../components/comment';
 import Layout from '../../components/layout';
 import UserLevel from '../../components/userlevel';
 import { getAllResultIds, getResultData } from '../../lib/results';
@@ -24,8 +25,8 @@ export default function Result({ resultData }) {
 	// nextCase = getCaseData(resultData.next_id);
 	return (
 		<Layout score={resultData.points}>
-			<p>{resultData.comment}</p>
-			<p>{resultData.response}</p>
+			<Comment image_url="/images/company.png" text={resultData.comment} />
+			<Comment image_url="/images/woman.png" text={resultData.response} />
 			<p>{resultData.material}</p>
 			<p>Points : {resultData.points}</p>
 			{resultData.points > 0 ? (

@@ -30,8 +30,13 @@ export default function About() {
 					</a>.
 				</li>
 				<li>
-					Detective icon is made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from{' '}
+					Detective and Fact Checking Organization icon are made by{' '}
+					<a href="https://www.flaticon.com/authors/freepik">Freepik</a> from{' '}
 					<a href="https://www.flaticon.com/">www.flaticon.com</a>
+				</li>
+				<li>
+					Woman icon on feedback page is made by <a href="https://www.flaticon.com/authors/ddara">ddara</a>{' '}
+					from <a href="https://www.flaticon.com/">www.flaticon.com</a>
 				</li>
 				<li>
 					Hosted on <a href="https://www.heroku.com/">Heroku</a> using Free and Hobby plan.
