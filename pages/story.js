@@ -19,7 +19,7 @@ export default function Story() {
 			</div>
 			<section className={homeStyles.startButton}>
 				<Link href="/story2">
-					<a>Next</a>
+					<a className={homeStyles.button}>Next</a>
 				</Link>
 			</section>
 		</Layout>

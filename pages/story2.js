@@ -21,7 +21,7 @@ export default function Story2() {
 			</div>
 			<section className={homeStyles.startButton}>
 				<Link href="/levels">
-					<a>Next</a>
+					<a className={homeStyles.button}>Next</a>
 				</Link>
 			</section>
 		</Layout>

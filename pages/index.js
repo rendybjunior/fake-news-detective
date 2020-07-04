@@ -12,7 +12,7 @@ export default function Home() {
 			<section className={homeStyles.startButton}>
 				<h2>
 					<Link href="/story">
-						<a>Start</a>
+						<a className={homeStyles.button}>Start</a>
 					</Link>
 				</h2>
 			</section>

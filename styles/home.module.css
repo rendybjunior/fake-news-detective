@@ -87,3 +87,25 @@
 	background-color: lightpink;
 	border-color: red;
 }
+
+.button {
+	font: bold;
+	font-size: 80%;
+	text-decoration: none;
+	background-color: #eeeeee;
+	color: #333333;
+	padding: 0.3rem;
+	border-top: 0.05rem solid #cccccc;
+	border-right: 0.05rem solid #333333;
+	border-bottom: 0.05rem solid #333333;
+	border-left: 0.05rem solid #cccccc;
+	display: inline-block;
+}
+
+.blockbutton {
+	display: block;
+}
+
+.options {
+	margin: 1rem 0 1rem 0;
+}

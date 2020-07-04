@@ -9,13 +9,13 @@ export function getOption(option_type, text, next_id) {
 	if (option_type == 'dialog') {
 		return (
 			<Link href="/dialogs/[id]" as={`/dialogs/${next_id}`}>
-				{text}
+				<a className={`${homeStyles.button} ${homeStyles.blockbutton}`}>{text}</a>
 			</Link>
 		);
 	} else {
 		return (
 			<Link href="/results/[id]" as={`/results/${next_id}`}>
-				{text}
+				<a className={`${homeStyles.button} ${homeStyles.blockbutton}`}>{text}</a>
 			</Link>
 		);
 	}
@@ -32,16 +32,20 @@ export default function CaseLayout({ caseData }) {
 			<div className={`${homeStyles.content}`}>
 				<img src={caseData.content} alt={caseData.title} />
 			</div>
-			<div className={`${homeStyles.prompt}`}>
-				<Comment image_url="/images/explore.png" text={caseData.prompt} />
+			<div className={`${homeStyles.storyBox}`}>
+				<div className={`${homeStyles.prompt}`}>
+					<Comment image_url="/images/explore.png" text={caseData.prompt} />
+				</div>
+				<div className={`${homeStyles.options}`}>
+					<ul className={utilStyles.list}>
+						{caseData.options.map(({ id, text, next_id, type }) => (
+							<li className={utilStyles.listItem} key={id}>
+								{getOption(type, text, next_id)}
+							</li>
+						))}
+					</ul>
+				</div>
 			</div>
-			<ul className={utilStyles.list}>
-				{caseData.options.map(({ id, text, next_id, type }) => (
-					<li className={utilStyles.listItem} key={id}>
-						{getOption(type, text, next_id)}
-					</li>
-				))}
-			</ul>
 		</Layout>
 	);
 }

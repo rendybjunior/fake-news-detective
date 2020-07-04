@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import homeStyles from '../styles/home.module.css';
 
 export default class UserLevel extends Component {
 	constructor(props) {
@@ -37,7 +38,13 @@ export default class UserLevel extends Component {
 		) {
 			return <div>{this.props.children}</div>;
 		} else {
-			return <div>(Locked) {this.props.gameTitle}</div>;
+			return (
+				<div>
+					<a href="#" className={homeStyles.button}>
+						<b>Locked</b> &#128274; {this.props.gameTitle}
+					</a>
+				</div>
+			);
 		}
 	}
 }

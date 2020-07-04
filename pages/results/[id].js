@@ -44,7 +44,7 @@ export default function Result({ resultData }) {
 				<audio id="bgm" src="/sounds/362204__taranp__horn-fail-wahwah-3.mp3" autoPlay={true} />
 			)}
 			<p>
-				<a href={resultData.reference} target="_blank">
+				<a href={resultData.reference} target="_blank" className={homeStyles.button}>
 					Learn more
 				</a>
 			</p>
@@ -57,7 +57,7 @@ export default function Result({ resultData }) {
 					newCase={resultData.next_case}
 				>
 					<Link href="/cases/[id]" as={`/cases/${resultData.next_id}`}>
-						Continue
+						<a className={homeStyles.button}>Continue</a>
 					</Link>
 				</UserLevel>
 			</p>

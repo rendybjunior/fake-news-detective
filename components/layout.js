@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
+import homeStyles from '../styles/home.module.css';
 import Link from 'next/link';
 import Score from './score';
 import BGM from './bgm'
@@ -55,7 +56,7 @@ export default function Layout({ children, home, levels, score, story }) {
 			<div className={styles.gameFooter}>
 				<div className={styles.backToHome}>
 				<Link href="/levels">
-					<a>← Back to Levels</a>
+					<a className={homeStyles.button}>← Back to Levels</a>
 				</Link>
 				</div>
 			</div>
@@ -64,7 +65,7 @@ export default function Layout({ children, home, levels, score, story }) {
 			<>
 			<div className={styles.gameFooter}>
 				<Link href="/about">
-					<a>About</a>
+					<a className={homeStyles.button}>About</a>
 				</Link>
 			</div>
 			<BGM />

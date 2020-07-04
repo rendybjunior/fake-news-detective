@@ -29,7 +29,7 @@ export default function Levels({ allCasesData }) {
 						<li className={utilStyles.listItem} key={id}>
 							<UserLevel gameLevel={level} gameCase={cases} gameTitle={title}>
 								<Link href="/cases/[id]" as={`/cases/${id}`}>
-									{title}
+									<a className={`${homeStyles.button} ${homeStyles.blockbutton}`}>{title}</a>
 								</Link>
 							</UserLevel>
 						</li>
