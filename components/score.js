@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import styles from './layout.module.css';
 
 function increment(state, props) {
 	return {
@@ -31,7 +32,7 @@ export default class Score extends Component {
 
 	render() {
 		return (
-			<div>
+			<div className={styles.score}>
 				<div>Score: {this.state.score}</div>
 			</div>
 		);

@@ -8,7 +8,7 @@ import BGM from './bgm'
 // const name = 'Username';
 export const siteTitle = 'Fake News Detective';
 
-export default function Layout({ children, home, levels, score, about }) {
+export default function Layout({ children, home, levels, score, story }) {
 	return (
 	<div className={styles.container}>
 		<Head>
@@ -28,44 +28,49 @@ export default function Layout({ children, home, levels, score, about }) {
 		</Head>
 		<header className={styles.header}>
 		  {home ? (
-			<>
+		<>
 			  <img
 				src="/images/explore.png"
 				className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
 				alt={siteTitle}
 			  />
-			  <h1 className={utilStyles.heading2Xl}>{siteTitle}</h1>
+			  <h1 className={utilStyles.headingLg}>{siteTitle}</h1>
 			</>
 		  ) : (
 			<>
-				<Score step={score ? score : 0} />
-				<img
-					src="/images/explore.png"
-					className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-					alt={siteTitle}
-				/>
-			  <h2 className={utilStyles.headingMd}>{siteTitle}</h2>
+				<div className={styles.gameHeader}>
+					<Score step={score ? score : 0} />
+					<img
+						src="/images/explore.png"
+						className={`${styles.gameImage} ${utilStyles.borderCircle}`}
+						alt={siteTitle}
+					/>
+				</div>
 			</>
 		  )}
 		</header>
 		<main>{children}</main>
-		{!home && !levels && (
-		  <div className={styles.backToHome}>
-			<Link href="/levels">
-			  <a>← Back to Levels</a>
-			</Link>
-		  </div>
+		<footer className={styles.footer}>
+		{!home && !levels && !story && (
+			<div className={styles.gameFooter}>
+				<div className={styles.backToHome}>
+				<Link href="/levels">
+					<a>← Back to Levels</a>
+				</Link>
+				</div>
+			</div>
 		)}
 		{(levels) && (
 			<>
-			<div>
-			<Link href="/about">
-				<a>About</a>
-			</Link>
+			<div className={styles.gameFooter}>
+				<Link href="/about">
+					<a>About</a>
+				</Link>
 			</div>
 			<BGM />
 			</>
 		)}
+		</footer>
 	  </div>
 	);
 }
