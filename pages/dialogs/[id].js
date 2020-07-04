@@ -56,7 +56,16 @@ export default function Dialog({ dialogData }) {
 				</div>
 			</div>
 			<img src={dialogData.content} alt={dialogData.title} />
-			<p>{dialogData.prompt}</p>
+			<div className={`${homeStyles.prompt}`}>
+				<div className={`${homeStyles.comment}`}>
+					<img src="/images/explore.png" className={`${homeStyles.commentImage}`} alt="player" />
+					<div className={`${homeStyles.speechbubblewrapper}`}>
+						<div className={`${homeStyles.speechbubble}`}>
+							<div className={`${homeStyles.speechbubbletext}`}>{dialogData.prompt}</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<ul className={utilStyles.list}>
 				{dialogData.options.map(({ id, text, next_id, type }) => (
 					<li className={utilStyles.listItem} key={id}>
