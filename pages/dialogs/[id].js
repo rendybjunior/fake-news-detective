@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import CaseLayout from '../../components/caselayout';
 import { getAllDialogIds, getDialogData } from '../../lib/dialogs';
 

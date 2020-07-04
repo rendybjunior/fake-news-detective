@@ -1,8 +1,11 @@
 import Link from 'next/link';
+import Head from 'next/head';
 import Comment from '../../components/comment';
 import Layout from '../../components/layout';
+import ResultComment from '../../components/resultcomment';
 import UserLevel from '../../components/userlevel';
 import { getAllResultIds, getResultData } from '../../lib/results';
+import homeStyles from '../../styles/home.module.css';
 
 export async function getStaticPaths() {
 	const paths = getAllResultIds();
@@ -25,10 +28,16 @@ export default function Result({ resultData }) {
 	// nextCase = getCaseData(resultData.next_id);
 	return (
 		<Layout score={resultData.points}>
-			<Comment image_url="/images/company.png" text={resultData.comment} />
-			<Comment image_url="/images/woman.png" text={resultData.response} />
-			<p>{resultData.material}</p>
-			<p>Points : {resultData.points}</p>
+			<Head>
+				<title>{resultData.title}</title>
+			</Head>
+			<h4>{resultData.title}</h4>
+			<ResultComment text={resultData.comment} points={resultData.points} />
+			<Comment image_url="/images/woman.png" text={'Alice: ' + resultData.response} />
+			<div className={`${homeStyles.storyBox}`}>
+				<b>&#10067; Do you know?</b>
+				<p>{resultData.material}</p>
+			</div>
 			{resultData.points > 0 ? (
 				<audio id="bgm" src="/sounds/320775__rhodesmas__win-02.mp3" autoPlay={true} />
 			) : (

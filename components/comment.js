@@ -1,5 +1,3 @@
-import Link from 'next/link';
-import utilStyles from '../styles/utils.module.css';
 import homeStyles from '../styles/home.module.css';
 
 export default function Comment({ image_url, text }) {

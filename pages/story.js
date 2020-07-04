@@ -1,9 +1,6 @@
 import Link from 'next/link';
-import Head from 'next/head';
 import Layout from '../components/layout';
 import homeStyles from '../styles/home.module.css';
-import utilStyles from '../styles/utils.module.css';
-import styles from '../components/layout.module.css';
 
 export default function Story() {
 	return (

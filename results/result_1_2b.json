@@ -1,10 +1,11 @@
 {
 	"id": "result_1_2b",
+	"title": "Level 1 Case 2 - Millennials’ Money Habits",
 	"level": 1,
 	"cases": 2,
 	"material": "One point of view to evaluate a post is by analyzing the author’s intention. What might be the possible motives for the author? Let’s say you see a provocative political post, what do you think are the intentions possible there?",
 	"reference": "https://cor.stanford.edu/curriculum/lessons/intro-to-whos-behind-the-information",
-	"comment": "Both options are right, but we need to be aware that post creator might have some intentions",
+	"comment": "Both options are right, but we need to be aware that post creator might have some intentions.",
 	"response": "Thanks, that’s insightful!",
 	"points": 4,
 	"next_id": "case_1_3",

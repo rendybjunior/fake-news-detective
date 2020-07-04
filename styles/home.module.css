@@ -69,3 +69,21 @@
 .prompt {
 	width: 100%;
 }
+
+.resultcomment {
+	border: 0.05rem solid;
+	border-radius: 0.5rem;
+	padding: 0.75rem;
+	margin: 1rem 0 1rem 0;
+	font-size: 90%;
+}
+
+.resultcorrect {
+	background-color: lightgreen;
+	border-color: green;
+}
+
+.resultwrong {
+	background-color: lightpink;
+	border-color: red;
+}
