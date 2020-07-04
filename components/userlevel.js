@@ -40,7 +40,7 @@ export default class UserLevel extends Component {
 		} else {
 			return (
 				<div>
-					<a href="#" className={homeStyles.button}>
+					<a href="#" className={`${homeStyles.button} ${homeStyles.blockbutton}`}>
 						<b>Locked</b> &#128274; {this.props.gameTitle}
 					</a>
 				</div>
