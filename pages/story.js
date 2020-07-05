@@ -6,12 +6,17 @@ export default function Story() {
 	return (
 		<Layout story>
 			<img src="/images/explore.png" className={`${homeStyles.storyImage}`} alt="player" />
-			<h3>How my story starts...</h3>
+			<h3>How my story started...</h3>
 			<div className={`${homeStyles.storyBox}`}>
-				<p>Once upon a time, fake news spreads out fast in social media and many people believe it is true.</p>
+				<p>Once upon a time, fake news spread out fast in social media, many people believe they are true.</p>
 				<p>
-					One of them, believed one fake story too much so that he opened gun fires in an innocent pizza
-					restaurant, thinking it is running a child sex ring (it really happened!).
+					One man, believed one fake story too much, so that{' '}
+					<a
+						href="https://www.nytimes.com/2016/12/05/business/media/comet-ping-pong-pizza-shooting-fake-news-consequences.html"
+						target="_blank"
+					>
+						he opened gun fires in an innocent pizza restaurant
+					</a>, thinking it is running a child sex ring (glad that no one hurts!).
 				</p>
 				<p>
 					<b>This is where I decided to join fact checking organization to fight fake news...</b>

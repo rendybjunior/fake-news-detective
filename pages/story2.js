@@ -15,8 +15,10 @@ export default function Story2() {
 					Our mission is to fight fake news by warning our followers in social media when we see something
 					strange with a news.
 				</p>
-				<p>You will analyze some news and decide what to say to our followers.</p>
-				<p>The more you help people with truth, the more score you got.</p>
+				<p>
+					<b>You will analyze some news and decide what to say to our followers.</b> The more you help people
+					with truth, the more score you got.
+				</p>
 				<p>Let's start!</p>
 			</div>
 			<section className={homeStyles.startButton}>

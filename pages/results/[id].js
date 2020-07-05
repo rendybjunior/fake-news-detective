@@ -38,12 +38,7 @@ export default function Result({ resultData }) {
 				<b>&#10067; Do you know?</b>
 				<p>{resultData.material}</p>
 			</div>
-			{resultData.points > 0 ? (
-				<audio id="bgm" src="/sounds/320775__rhodesmas__win-02.mp3" autoPlay={true} />
-			) : (
-				<audio id="bgm" src="/sounds/362204__taranp__horn-fail-wahwah-3.mp3" autoPlay={true} />
-			)}
-			<div>
+			<div className={`${homeStyles.resultbutton}`}>
 				<a
 					href={resultData.reference}
 					target="_blank"
@@ -51,17 +46,28 @@ export default function Result({ resultData }) {
 				>
 					Learn more
 				</a>
-				<UserLevel
-					gameLevel={resultData.next_level}
-					gameCase={resultData.next_case}
-					gameTitle={'Continue'}
-					newLevel={resultData.next_level}
-					newCase={resultData.next_case}
-				>
+				{resultData.points > 0 ? (
+					<>
+					<audio id="bgm" src="/sounds/320775__rhodesmas__win-02.mp3" autoPlay={true} />
 					<Link href="/cases/[id]" as={`/cases/${resultData.next_id}`}>
-						<a className={`${homeStyles.button}`}>Continue to Next Case</a>
+						<a className={`${homeStyles.button}  ${homeStyles.floatleftbutton}`}>Continue</a>
 					</Link>
-				</UserLevel>
+					<UserLevel
+						gameLevel={resultData.next_level}
+						gameCase={resultData.next_case}
+						gameTitle={'Continue'}
+						newLevel={resultData.next_level}
+						newCase={resultData.next_case}
+					/>
+					</>
+				) : (
+					<>
+					<audio id="bgm" src="/sounds/362204__taranp__horn-fail-wahwah-3.mp3" autoPlay={true} />
+					<Link href="/cases/[id]" as={`/cases/${resultData.case_id}`}>
+						<a className={`${homeStyles.button}  ${homeStyles.floatleftbutton}`}>Try again</a>
+					</Link>
+					</>
+				)}
 			</div>
 		</Layout>
 	);
