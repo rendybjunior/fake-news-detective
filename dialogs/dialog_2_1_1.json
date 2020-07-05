@@ -1,0 +1,22 @@
+{
+	"id": "dialog_2_1_1",
+	"level": 2,
+	"cases": 1,
+	"comment": "Yeah, it’s hard to verify without enough evidence...",
+	"content": "/images/case_2_1.jpg",
+	"prompt": "What evidence do you think we need?",
+	"options": [
+		{
+			"id": "option_1",
+			"text": "We don’t know anything about the author of the post, a journalist or not",
+			"type": "result",
+			"next_id": "result_2_1a"
+		},
+		{
+			"id": "option_2",
+			"text": "We don’t even know where the photo was taken, whose tombs are they.",
+			"type": "result",
+			"next_id": "result_2_1a"
+		}
+	]
+}

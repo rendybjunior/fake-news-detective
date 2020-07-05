@@ -1,0 +1,23 @@
+{
+	"id": "case_2_1",
+	"title": "Level 2 Case 1 - The Syrian Child",
+	"level": 1,
+	"cases": 3,
+	"comment": "The civil war in Syria began in 2011, and we found this old post retweeted...",
+	"content": "/images/case_2_1.jpg",
+	"prompt": "What do you think about this post?",
+	"options": [
+		{
+			"id": "option_1",
+			"text": "What a pity. No other reasonable explanation why the child lies there except the tombs are his parents.",
+			"type": "result",
+			"next_id": "result_2_1b"
+		},
+		{
+			"id": "option_2",
+			"text": "Need more evidence to support the claim that they are his parents.",
+			"type": "dialog",
+			"next_id": "dialog_2_1_1"
+		}
+	]
+}

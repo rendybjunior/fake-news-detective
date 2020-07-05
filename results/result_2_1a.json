@@ -1,0 +1,15 @@
+{
+	"id": "result_2_1a",
+	"title": "Level 2 Case 1 - The Syrian Child",
+	"case_id": "case_2_1",
+	"level": 2,
+	"cases": 1,
+	"material": "It is easy to believe an emotionally attractive imagery. Stop before re-share, ask yourself whether the evidence supports the claim? Is the author trustworthy?",
+	"reference": "https://cor.stanford.edu/curriculum/lessons/evaluating-evidence",
+	"comment": "We need more evidence!",
+	"response": "Hey you are right! Not enough evidence is provided in this post.",
+	"points": 4,
+	"next_id": "case_2_2",
+	"next_level": 2,
+	"next_case": 2
+}
