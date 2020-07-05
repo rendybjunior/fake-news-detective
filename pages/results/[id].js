@@ -43,12 +43,14 @@ export default function Result({ resultData }) {
 			) : (
 				<audio id="bgm" src="/sounds/362204__taranp__horn-fail-wahwah-3.mp3" autoPlay={true} />
 			)}
-			<p>
-				<a href={resultData.reference} target="_blank" className={homeStyles.button}>
+			<div>
+				<a
+					href={resultData.reference}
+					target="_blank"
+					className={`${homeStyles.button} ${homeStyles.floatleftbutton}`}
+				>
 					Learn more
 				</a>
-			</p>
-			<p>
 				<UserLevel
 					gameLevel={resultData.next_level}
 					gameCase={resultData.next_case}
@@ -57,10 +59,10 @@ export default function Result({ resultData }) {
 					newCase={resultData.next_case}
 				>
 					<Link href="/cases/[id]" as={`/cases/${resultData.next_id}`}>
-						<a className={homeStyles.button}>Continue</a>
+						<a className={`${homeStyles.button}`}>Continue to Next Case</a>
 					</Link>
 				</UserLevel>
-			</p>
+			</div>
 		</Layout>
 	);
 }
