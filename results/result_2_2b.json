@@ -1,0 +1,15 @@
+{
+	"id": "result_2_2a",
+	"title": "Level 2 Case 2 - Anti-Lockdown Protest",
+	"case_id": "case_2_2",
+	"level": 2,
+	"cases": 2,
+	"material": "Any image can be fabricated nowadays, ranging from the-so-obviously edited to realistic imagery. In this case, photo contrast and lighting become one of the clues.",
+	"reference": "https://libguides.ashland.edu/fakenews/photos",
+	"comment": "Fake photos are everywhere...",
+	"response": "You are correct. The photo was edited!",
+	"points": 4,
+	"next_id": "case_2_3",
+	"next_level": 2,
+	"next_case": 3
+}

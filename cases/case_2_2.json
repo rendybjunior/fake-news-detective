@@ -1,0 +1,23 @@
+{
+	"id": "case_2_2",
+	"title": "Level 2 Case 2 - Anti-Lockdown Protest",
+	"level": 2,
+	"cases": 2,
+	"comment": "Our followers ask about this photo...",
+	"content": "/images/case_2_2.png",
+	"prompt": "What do you think about this post?",
+	"options": [
+		{
+			"id": "option_1",
+			"text": "The photo looks fine and authentic",
+			"type": "dialog",
+			"next_id": "dialog_2_2_1"
+		},
+		{
+			"id": "option_2",
+			"text": "The photo is a fake.",
+			"type": "dialog",
+			"next_id": "dialog_2_2_1"
+		}
+	]
+}

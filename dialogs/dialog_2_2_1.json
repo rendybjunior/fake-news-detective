@@ -1,0 +1,22 @@
+{
+	"id": "dialog_2_2_1",
+	"level": 2,
+	"cases": 1,
+	"comment": "Interesting… Take a look at both...",
+	"content": "/images/dialog_2_2_1.png",
+	"prompt": "Which picture do you think is the real one?",
+	"options": [
+		{
+			"id": "option_1",
+			"text": "The first picture is the real one",
+			"type": "result",
+			"next_id": "result_2_2a"
+		},
+		{
+			"id": "option_2",
+			"text": "The second picture is the real one",
+			"type": "result",
+			"next_id": "result_2_2b"
+		}
+	]
+}
