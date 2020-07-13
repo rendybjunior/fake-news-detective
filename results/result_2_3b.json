@@ -1,0 +1,15 @@
+{
+	"id": "result_2_3a",
+	"title": "Level 2 Case 3 - Police in BLM Protest",
+	"case_id": "case_2_3",
+	"level": 2,
+	"cases": 3,
+	"material": "It is hard to conclude what actually happened with a very short video footage. Interviews with the police in the video or eyewitnesses are required to give more context. Think what are possible explanations and do not conclude right away",
+	"reference": "https://cor.stanford.edu/curriculum/lessons/evaluating-evidence",
+	"comment": "The video looks real, but we can not conclude anything yet.",
+	"response": "You’re right, it has multiple interpretations, I'm holding my judgement",
+	"points": 4,
+	"next_id": "case_3_1",
+	"next_level": 3,
+	"next_case": 1
+}

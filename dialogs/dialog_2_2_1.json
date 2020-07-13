@@ -1,7 +1,7 @@
 {
 	"id": "dialog_2_2_1",
 	"level": 2,
-	"cases": 1,
+	"cases": 2,
 	"comment": "Interesting… Take a look at both...",
 	"content": "/images/dialog_2_2_1.png",
 	"prompt": "Which picture do you think is the real one?",

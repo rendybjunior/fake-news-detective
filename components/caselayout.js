@@ -30,7 +30,16 @@ export default function CaseLayout({ caseData }) {
 			<h4>{caseData.title}</h4>
 			<Comment image_url="/images/explore.png" text={caseData.comment} />
 			<div className={`${homeStyles.content}`}>
-				<img src={caseData.content} alt={caseData.title} />
+				<div className={`${homeStyles.contentinside}`}>
+					{caseData.content_type == 'video' ? (
+						<video width="320" controls>
+							<source src={caseData.content} type="video/mp4" />
+							Your browser does not support the video tag.
+						</video>
+					) : (
+						<img src={caseData.content} alt={caseData.title} />
+					)}
+				</div>
 			</div>
 			<div className={`${homeStyles.storyBox}`}>
 				<div className={`${homeStyles.prompt}`}>

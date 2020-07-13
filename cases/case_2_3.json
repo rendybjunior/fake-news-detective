@@ -1,0 +1,24 @@
+{
+	"id": "case_2_3",
+	"title": "Level 2 Case 3 - Police in BLM Protest",
+	"level": 2,
+	"cases": 3,
+	"comment": "Our followers are angry about this footage...",
+	"content": "/videos/case_2_3.mp4",
+	"content_type": "video",
+	"prompt": "What do you think about this video?",
+	"options": [
+		{
+			"id": "option_1",
+			"text": "The video looks real and surprising to see.",
+			"type": "dialog",
+			"next_id": "dialog_2_3_1"
+		},
+		{
+			"id": "option_2",
+			"text": "The video looks fabricated",
+			"type": "dialog",
+			"next_id": "dialog_2_3_1"
+		}
+	]
+}

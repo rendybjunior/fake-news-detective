@@ -1,0 +1,23 @@
+{
+	"id": "dialog_2_3_1",
+	"level": 2,
+	"cases": 3,
+	"comment": "I feel this is real video..",
+	"content": "/videos/case_2_3.mp4",
+	"content_type": "video",
+	"prompt": "What do you think are possible interpretations of this?",
+	"options": [
+		{
+			"id": "option_1",
+			"text": "There’s only one possible explanation, the police are trying to make protesters look bad.",
+			"type": "result",
+			"next_id": "result_2_3a"
+		},
+		{
+			"id": "option_2",
+			"text": "Actually, there might be multiple interpretations, for example they might try to clear up the already-broken window...",
+			"type": "result",
+			"next_id": "result_2_3b"
+		}
+	]
+}
