@@ -1,0 +1,22 @@
+{
+	"id": "dialog_3_3_1",
+	"level": 3,
+	"cases": 3,
+	"comment": "Let’s take a look closer on the post..",
+	"content": "/images/dialog_3_3_1.png",
+	"prompt": "What do you see from the post?",
+	"options": [
+		{
+			"id": "option_1",
+			"text": "60% of Americans own guns, as the tweet says",
+			"type": "result",
+			"next_id": "result_3_3b"
+		},
+		{
+			"id": "option_2",
+			"text": "60% of Americans who own guns, own one for personal protection",
+			"type": "result",
+			"next_id": "result_3_3a"
+		}
+	]
+}

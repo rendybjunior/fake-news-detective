@@ -1,0 +1,23 @@
+{
+	"id": "case_3_3",
+	"title": "Level 3 Case 3 - Gun Culture",
+	"level": 3,
+	"cases": 3,
+	"comment": "One of our followers tweeted about this...",
+	"content": "/images/case_3_3.png",
+	"prompt": "What can you infer from the post?",
+	"options": [
+		{
+			"id": "option_1",
+			"text": "The percentage of Americans who own guns is 60%",
+			"type": "result",
+			"next_id": "result_3_3b"
+		},
+		{
+			"id": "option_2",
+			"text": "Can not conclude yet, need to see the post.",
+			"type": "dialog",
+			"next_id": "dialog_3_3_1"
+		}
+	]
+}

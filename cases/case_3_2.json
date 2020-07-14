@@ -11,7 +11,7 @@
 			"id": "option_1",
 			"text": "I think so. The time and location looks correct.",
 			"type": "result",
-			"next_id": "result_3_3b"
+			"next_id": "result_3_2a"
 		},
 		{
 			"id": "option_2",

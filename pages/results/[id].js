@@ -49,9 +49,16 @@ export default function Result({ resultData }) {
 				{resultData.points > 0 ? (
 					<>
 					<audio id="bgm" src="/sounds/320775__rhodesmas__win-02.mp3" autoPlay={true} />
-					<Link href="/cases/[id]" as={`/cases/${resultData.next_id}`}>
-						<a className={`${homeStyles.button}  ${homeStyles.floatleftbutton}`}>Continue</a>
+					{resultData.next_id == "case_4_1" ? (
+					<Link href="/ending">
+						<a className={`${homeStyles.button}  ${homeStyles.floatleftbutton}`}>Ending</a>
 					</Link>
+					) : (
+						<Link href="/cases/[id]" as={`/cases/${resultData.next_id}`}>
+							<a className={`${homeStyles.button}  ${homeStyles.floatleftbutton}`}>Continue</a>
+						</Link>
+
+					)} 
 					<UserLevel
 						gameLevel={resultData.next_level}
 						gameCase={resultData.next_case}

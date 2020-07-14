@@ -1,0 +1,15 @@
+{
+	"id": "result_3_3a",
+	"title": "Level 3 Case 3 - Gun Culture",
+	"case_id": "case_3_3",
+	"level": 3,
+	"cases": 3,
+	"material": "At times, people do not read carefully and put some comments on it, some time it is intentionally misleading. Do not take comment right away, check the article first before reacting or resharing a content.",
+	"reference": "https://cor.stanford.edu/curriculum/assessments/claims-on-twitter",
+	"comment": "The tweet text was misleading...",
+	"response": "Almost react to the tweet right away, it's misleading!",
+	"points": 4,
+	"next_id": "case_4_1",
+	"next_level": 4,
+	"next_case": 1
+}
