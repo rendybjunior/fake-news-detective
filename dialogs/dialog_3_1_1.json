@@ -1,0 +1,22 @@
+{
+	"id": "dialog_3_1_1",
+	"level": 3,
+	"cases": 1,
+	"comment": "Let’s try to search the image on the internet...",
+	"content": "/images/dialog_3_1_1.png",
+	"prompt": "What do you see from the search result?",
+	"options": [
+		{
+			"id": "option_1",
+			"text": "Told you, it is real.",
+			"type": "result",
+			"next_id": "result_3_1a"
+		},
+		{
+			"id": "option_2",
+			"text": "Fake photo it is.",
+			"type": "result",
+			"next_id": "result_3_1b"
+		}
+	]
+}

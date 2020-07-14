@@ -1,0 +1,23 @@
+{
+	"id": "case_3_1",
+	"title": "Level 3 Case 1 - MGM Lion",
+	"level": 3,
+	"cases": 1,
+	"comment": "Our followers are triggered to see a lion treated like this...",
+	"content": "/images/case_3_1.png",
+	"prompt": "What do you think about this?",
+	"options": [
+		{
+			"id": "option_1",
+			"text": "Fake photo for sure.",
+			"type": "dialog",
+			"next_id": "dialog_3_1_1"
+		},
+		{
+			"id": "option_2",
+			"text": "No, this one is real.",
+			"type": "result",
+			"next_id": "result_3_1a"
+		}
+	]
+}

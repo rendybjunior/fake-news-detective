@@ -1,0 +1,15 @@
+{
+	"id": "result_3_2b",
+	"title": "Level 3 Case 2 - RIP Mall of America",
+	"case_id": "case_3_2",
+	"level": 3,
+	"cases": 2,
+	"material": "Video and photos are often miscaptioned, making it out of the real context. Try to capture the video and do image search to see what the video really is.",
+	"reference": "https://www.snopes.com/fact-check/riot-mall-of-america-georgefloyd/",
+	"comment": "You see a video, capture one of the video scenes and search for the source.",
+	"response": "Thank you for finding out the real video! It is not as people talked about.",
+	"points": 4,
+	"next_id": "case_3_3",
+	"next_level": 3,
+	"next_case": 3
+}

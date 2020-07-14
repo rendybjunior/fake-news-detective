@@ -1,0 +1,15 @@
+{
+	"id": "result_3_1a",
+	"title": "Level 3 Case 1 - MGM Lion",
+	"case_id": "case_3_1",
+	"level": 3,
+	"cases": 1,
+	"material": "Technology makes it easy to fabricate fake photos. However, technology also makes it easy to find a fake photo! This is called reverse search, you can try it out by accessing images.google.com from your desktop.",
+	"reference": "https://www.snopes.com/fact-check/leo-the-lion-mgm-logo/",
+	"comment": "Search the image and see what others say.",
+	"response": "Hey… I found on the internet that this is a fake! :(",
+	"points": -1,
+	"next_id": "case_3_2",
+	"next_level": 3,
+	"next_case": 2
+}

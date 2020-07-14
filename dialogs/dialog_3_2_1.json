@@ -1,0 +1,22 @@
+{
+	"id": "dialog_3_2_1",
+	"level": 3,
+	"cases": 2,
+	"comment": "Let’s try to snapshot the video, and search the image on the internet...",
+	"content": "/images/dialog_3_2_1.png",
+	"prompt": "What do you see from the search result?",
+	"options": [
+		{
+			"id": "option_1",
+			"text": "It really went into the mall, this definitely about the George Floyd protest.",
+			"type": "result",
+			"next_id": "result_3_2a"
+		},
+		{
+			"id": "option_2",
+			"text": "It is dated back, and it is not even in Mall of America",
+			"type": "result",
+			"next_id": "result_3_2b"
+		}
+	]
+}
