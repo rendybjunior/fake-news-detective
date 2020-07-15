@@ -8,6 +8,14 @@ export default function Home() {
 		<Layout home>
 			<Head>
 				<title>{siteTitle}</title>
+				<meta name="twitter:card" content="summary" />
+				<meta name="twitter:site" content="@rendybjunior" />
+				<meta name="twitter:title" content="Fake News Detective Game" />
+				<meta
+					name="twitter:description"
+					content="Check this game out to learn how to spot fake stories on social media."
+				/>
+				<meta name="twitter:image" content="https://fake-news-detective.herokuapp.com/images/explore.png" />
 			</Head>
 			<section className={homeStyles.startButton}>
 				<h2>

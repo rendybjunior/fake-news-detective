@@ -2,10 +2,12 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Comment from '../../components/comment';
 import Layout from '../../components/layout';
+import Social from '../../components/social';
 import ResultComment from '../../components/resultcomment';
 import UserLevel from '../../components/userlevel';
 import { getAllResultIds, getResultData } from '../../lib/results';
 import homeStyles from '../../styles/home.module.css';
+
 
 export async function getStaticPaths() {
 	const paths = getAllResultIds();
@@ -25,7 +27,6 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Result({ resultData }) {
-	// nextCase = getCaseData(resultData.next_id);
 	return (
 		<Layout score={resultData.points}>
 			<Head>
@@ -59,6 +60,7 @@ export default function Result({ resultData }) {
 						</Link>
 
 					)} 
+					<Social />
 					<UserLevel
 						gameLevel={resultData.next_level}
 						gameCase={resultData.next_case}
