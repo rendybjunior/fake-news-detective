@@ -3,7 +3,7 @@
 	"level": 3,
 	"cases": 1,
 	"comment": "Let’s try to search the image on the internet...",
-	"content": "/images/dialog_3_1_1.png",
+	"content": "/images/dialog_3_1_1.jpg",
 	"prompt": "What do you see from the search result?",
 	"options": [
 		{

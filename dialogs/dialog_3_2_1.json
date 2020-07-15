@@ -3,7 +3,7 @@
 	"level": 3,
 	"cases": 2,
 	"comment": "Let’s try to snapshot the video, and search the image on the internet...",
-	"content": "/images/dialog_3_2_1.png",
+	"content": "/images/dialog_3_2_1.jpg",
 	"prompt": "What do you see from the search result?",
 	"options": [
 		{
