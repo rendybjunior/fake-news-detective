@@ -4,7 +4,8 @@
 	"level": 3,
 	"cases": 2,
 	"comment": "Someone tweeted 'rip to mall of america' on May 28, 2020, suggesting it is related to protest on George Floyd case.",
-	"content": "/images/case_3_2.png",
+	"content": "/videos/case_3_2.mp4",
+	"content_type": "video",
 	"prompt": "Is this video of a riot at the Mall of America related to protests that erupted in Minneapolis on May 27, 2020 related to the George Floyd case?",
 	"options": [
 		{
